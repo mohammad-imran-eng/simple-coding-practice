@@ -92,13 +92,33 @@ newFuncion(true)
 //Objective: write a function to give me the sum of all numbers in an array
 
 
-let sum = 0;
+// let sum = 0;
+// const problem = (data)=> {
+//     for(let i= 0; i<data.length; i++){
+//          sum = sum + data[i];
+//     }
+//     console.log(sum)
+// }
+
+
+// problem([10,20,30,40])
+
+
+const evenNumber = []
+
 const problem = (data)=> {
-    for(let i= 0; i<data.length; i++){
-         sum = sum + data[i];
+    for(let i=0; i<data.length; i++){
+        if(data[i] % 2 === 0){
+           evenNumber.push(data[i])
+        }
     }
-    console.log(sum)
+    return evenNumber;
+
 }
 
 
-problem([10,20,30,40])
+
+returnValue = problem([10,20,30,43]);
+
+
+console.log(returnValue)
