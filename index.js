@@ -204,17 +204,37 @@
 
 // check 3 value what is the bigger
 
-const bigger = (one,two,three)=> {
-    if(one > two && one > three){
-        console.log(one)
+// const bigger = (one,two,three)=> {
+//     if(one > two && one > three){
+//         console.log(one)
+//     }
+//     else if(two > one && two > three){
+//         console.log(two)
+//     }
+//     else {
+//         console.log(three)
+//     }
+// }
+
+// bigger(1,2,3)
+// bigger(10,20,30)
+
+
+
+// what are the biggest number of array
+
+const numbers = [10,20,30,40,50,60]
+
+const getMax =()=> {
+    let max = numbers[0]
+    for(const number of numbers){
+        if(number > max){
+            max = number
+        }
     }
-    else if(two > one && two > three){
-        console.log(two)
-    }
-    else {
-        console.log(three)
-    }
+    return max
 }
 
-bigger(1,2,3)
-bigger(10,20,30)
+
+const result = getMax()
+console.log(result)
