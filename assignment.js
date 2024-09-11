@@ -38,6 +38,31 @@
 // }
 
 
+
+// Third problem solve
+
+
+// function checkDigitsInName(name) {
+//    if(typeof name !== 'string'){
+//         return 'Invalid Input';
+//    }
+    
+
+//         const namePart = name.split("")
+//         for(let i =0; i<namePart.length; i++){
+//             if(!isNaN(namePart[i])){
+//                 return true;
+//             }
+//         }
+        
+//         return false;
+   
+// }
+
+
+
+
+
 // Fourth problem solve
 
 // function calculateFinalScore(obj) {
@@ -68,4 +93,31 @@
 
 
 // }
+
+
+// Fifth problem
+
+// function  waitingTime(waitingTimes  , serialNumber) {
+
+
+//     let totalTime = 0;
+    
+//    for(const value of waitingTimes){
+//         totalTime = totalTime + value
+//    }
+//    let averageTime = totalTime/waitingTimes.length;
+//    let finalAverageTime = Math.round(averageTime)
+
+//    let israterAgyAsy = serialNumber - 1;
+//    let israterAgyVivaBakiAsy = serialNumber - waitingTimes.length - 1
+
+//    let israterTimeLagbe = israterAgyVivaBakiAsy * finalAverageTime;
+//    console.log(israterTimeLagbe)
+
+   
+// }
+
+
+// waitingTime([7, 8, 3, 4, 5], "9")
+
 
