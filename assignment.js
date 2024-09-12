@@ -111,7 +111,6 @@ function  waitingTime(waitingTimes  , serialNumber) {
    let averageTime = totalTime/waitingTimes.length;
    let finalAverageTime = Math.round(averageTime)
 
-   let israterAgyAsy = serialNumber - 1;
    let israterAgyVivaBakiAsy = serialNumber - waitingTimes.length - 1
 
    let israterTimeLagbe = israterAgyVivaBakiAsy * finalAverageTime;
@@ -120,6 +119,7 @@ function  waitingTime(waitingTimes  , serialNumber) {
    return israterTimeLagbe;
    
 }
+
 
 
 
